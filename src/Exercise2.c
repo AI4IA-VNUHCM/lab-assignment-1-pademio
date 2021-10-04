@@ -26,15 +26,15 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	int max = testcase[0];
-	int min = testcase[0];
+	int max = -1000;
+	int min = 1000;
 
 		for (int j = 1; j <= i -1; ++j){
-			if (testcase[j] > max){
-				max = testcase[j];
+			if (testcase > max){
+				max = testcase;
 			}
-			if (testcase[j] < min && testcase[j] != 0) {
-				min = testcase[j];
+			if (testcase < min && testcase != 0) {
+				min = testcase;
 			}
 			
 		}
