@@ -29,13 +29,7 @@ int main(int argc, char *argv[]) {
 	int max = -9999;
 	int min = 99999;
 	int n = sizeof(testcase) / sizeof(testcase[0]);
-	bool value = false;
-	if (testcase[i-1] /= 0){
-		bool value = true;
-	}else {
-		bool value = false;
-	}
-	if (value == true){
+
 		for (int i = 0; i < n; i++){
 			if (testcase[i] > max){
 				max = testcase[i];
@@ -44,7 +38,7 @@ int main(int argc, char *argv[]) {
 				min = testcase[i];
 			}
 		}
-	}
+		
 	printf("\n Max: %d",max);
 	printf("\n Min: %d",min);
 	
