@@ -11,7 +11,6 @@ Ex:
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
 int snt(int x)
 {
     if (x < 2)
@@ -22,14 +21,12 @@ int snt(int x)
     return 1;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase = atoi(argv[1]);
+	int testcase = 10;
 	//Your codes here
-		for (int i = 1; i < testcase; i++){
-        if (snt(i) == 1){
-            printf(" %d",i);
-		}
-		}
+		for (int i = 1; i < testcase; i++)
+        if (snt(i) == 1)
+            printf("%d ",i);
 	return 0;
 }
