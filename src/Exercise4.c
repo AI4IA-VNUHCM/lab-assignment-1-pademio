@@ -26,14 +26,15 @@ int main(int argc, char *argv[]) {
 	//Your codes here
 	int i, j, k, m, store;
  
-	int space = 1;
+	int space = 2;
 
 	for(i = 0; i < height; i++){
 		
-		for(j = i; j < height  ; j++) printf(" ");
+		for(j = i; j < height ; j++) printf("  ");
 		
 		for(k = 0; k < i + 1; k++){
-			printf("* ");
+			printf("*");
+            printf(" ");
 
 			if(k == thickness - 1 && i < height - thickness)
 			{
@@ -42,11 +43,10 @@ int main(int argc, char *argv[]) {
 					store = space;
 					while(space > 0)
 					{
-						
 						printf(" ");
 						space--; 
 					}
-					space = store + 2; 
+					space = store + 4; 
 				}
 				
 				break; 
@@ -54,12 +54,19 @@ int main(int argc, char *argv[]) {
 		}
 		
 		for(m = 0; m < i; m ++){
-			if(i >= 1 && i < height - thickness) {
+			if(i >= 1 && i < height - thickness) 
+            {
 				
 				if(m == thickness) break; 
-				printf("* ");
+				printf("*");
+                printf(" ");
 			}
-			else printf("* ");
+			else 
+            {
+                
+                printf("*");
+                printf(" ");
+            }
 		}
 		
 		printf("\n");
