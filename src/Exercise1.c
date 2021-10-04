@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	int n;
 	while(testcase != 0) {
 		n = testcase % 10;
-		printf("%d", n);
+		printf("%d ", n);
 		testcase /= 10;
 	}
 	return 0;
