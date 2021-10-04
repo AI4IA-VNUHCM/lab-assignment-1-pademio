@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	int max = 0;
 	int min = 999;
 
-		for (int j = 0; j < i; j++){
+		for (int j = 1; j <= i; j++){
 			if (testcase[j] > max){
 				max = testcase[j];
 			}
