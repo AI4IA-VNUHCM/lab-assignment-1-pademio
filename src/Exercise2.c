@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 		}
 
 	printf("Max: %d",max);
-	printf("\n Min: %d",min);
+	printf("/nMin: %d",min);
 	
 	return 0;
 }
