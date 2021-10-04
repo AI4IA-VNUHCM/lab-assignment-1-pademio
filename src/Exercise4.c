@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 		for(j = i; j < height  ; j++) printf(" ");
 		
 		for(k = 0; k < i + 1; k++){
-			printf("*");
+			printf("* ");
 
 			if(k == thickness - 1 && i < height - thickness)
 			{
@@ -57,9 +57,9 @@ int main(int argc, char *argv[]) {
 			if(i >= 1 && i < height - thickness) {
 				
 				if(m == thickness) break; 
-				printf("*");
+				printf("* ");
 			}
-			else printf("*");
+			else printf("* ");
 		}
 		
 		printf("\n");
