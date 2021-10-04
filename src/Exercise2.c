@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 			if (testcase[j] > max){
 				max = testcase[j];
 			}
-			if (testcase[j] < min){
+			if (testcase[j] < min && testcase[j] != 0) {
 				min = testcase[j];
 			}
 			
