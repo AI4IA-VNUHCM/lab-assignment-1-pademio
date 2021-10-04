@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	int height = atoi(argv[1]);
 	int border = atoi(argv[2]);
 	//Your codes here
-	int main(){
+	
 	int height, border;
 	int i, j, k, m, store;
  
@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
 		}
 		printf("\n");
 	}
-}
-Dễ của m nè
+
+
 	return 0;
 }
