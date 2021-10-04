@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	int i, j, k, m, store;
  
 	int space = 1;
-	scanf_s("%d %d", &height, &thickness);
+	
 
 	for(i = 0; i < height; i++){
 		
