@@ -22,14 +22,14 @@ Ex:
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int height = atoi(argv[1]);
-	int border = atoi(argv[2]);
+	int thickness = atoi(argv[2]);
 	//Your codes here
 	
-	int height, border;
+	int height, thickness;
 	int i, j, k, m, store;
  
 	int space = 1;
-	scanf_s("%d %d", &height, &border);
+	scanf_s("%d %d", &height, &thickness);
 
 	for(i = 0; i < height; i++){
 		
@@ -38,9 +38,9 @@ int main(int argc, char *argv[]) {
 		for(k = 0; k < i + 1; k++){
 			printf("*");
 
-			if(k == broder - 1 && i < height - broder)
+			if(k == thickness - 1 && i < height - thickness)
 			{
-				if(i > broder -1) 
+				if(i > thickness -1) 
 				{
 					store = space;
 					while(space > 0)
@@ -57,13 +57,14 @@ int main(int argc, char *argv[]) {
 		}
 		
 		for(m = 0; m < i; m ++){
-			if(i >= 1 && i < height - broder) {
+			if(i >= 1 && i < height - thickness) {
 				
-				if(m == broder) break; 
+				if(m == thickness) break; 
 				printf("*");
 			}
 			else printf("*");
 		}
+		
 		printf("\n");
 	}
 
