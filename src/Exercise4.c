@@ -22,16 +22,15 @@ Ex:
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int height = atoi(argv[1]);
-	int thickness = atoi(argv[1]);
+	int thickness = atoi(argv[2]);
 	//Your codes here
-	
 	int i, j, k, m, store;
  
 	int space = 1;
 
 	for(i = 0; i < height; i++){
 		
-		for(j = i; j < height - 1; j++) printf(" ");
+		for(j = i; j < height ; j++) printf(" ");
 		
 		for(k = 0; k < i + 1; k++){
 			printf("*");
