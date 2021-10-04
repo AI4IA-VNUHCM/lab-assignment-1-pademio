@@ -26,18 +26,27 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	int max = 0;
-	int min = 0;
-	for (int j = 0; j < i; j++){
-		if (testcase > max){
-			max = testcase;
+	int max = -9999;
+	int min = 99999;
+	int n = sizeof(testcase) / sizeof(testcase[0]);
+	bool value = false;
+	if (testcase[i-1] /= 0){
+		bool value = true;
+	}else {
+		bool value = false;
+	}
+	if (value == true){
+		for (int i = 0; i < n; i++){
+			if (testcase[i] > max){
+				max = testcase[i];
+			}
+			if (testcase[i] < min){
+				min = testcase[i];
+			}
 		}
 	}
-	for (int a = 0; a < ; a++){
-		if (testcase > min){
-			min = testcase;
-		}
-	}
-	printf("%d", max);
+	printf("\n Max: %d",max);
+	printf("\n Min: %d",min);
+	
 	return 0;
 }
