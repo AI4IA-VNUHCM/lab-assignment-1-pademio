@@ -28,9 +28,9 @@ int main(int argc, char *argv[]) {
  
 	int space = 1;
 
-	for(i = 0; i < height; i++){
+	for(i = 0; i < height -1; i++){
 		
-		for(j = i; j < height ; j++) printf(" ");
+		for(j = i; j < height -1 ; j++) printf(" ");
 		
 		for(k = 0; k < i + 1; k++){
 			printf("*");
