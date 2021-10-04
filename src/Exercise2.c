@@ -26,19 +26,19 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	int max = -9999;
-	int min = 99999;
-	int n = sizeof(testcase) / sizeof(testcase[0]);
+	int max = 0;
+	int min = 999;
 
-		for (int i = 0; i < n; i++){
-			if (testcase[i] > max){
-				max = testcase[i];
+		for (int j = 0; j < i; j++){
+			if (testcase > max){
+				max = testcase;
 			}
-			if (testcase[i] < min){
-				min = testcase[i];
+			if (testcase < min){
+				min = testcase;
 			}
+			
 		}
-		
+
 	printf("\n Max: %d",max);
 	printf("\n Min: %d",min);
 	
