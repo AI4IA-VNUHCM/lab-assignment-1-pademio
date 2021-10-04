@@ -1,6 +1,6 @@
 /*
 4.	Write a program to display a hollow triangle by asterisks (*) on the screen.
-The input will be the height of the triangle and the thickness of the borders.
+The input will be the height of the triangle and the broder of the borders.
 Ex:
  ____________________________________
 | Input: 7 2                         |
@@ -24,6 +24,49 @@ int main(int argc, char *argv[]) {
 	int height = atoi(argv[1]);
 	int border = atoi(argv[2]);
 	//Your codes here
-	
+	int main(){
+	int height, border;
+	int i, j, k, m, store;
+ 
+	int space = 1;
+	scanf_s("%d %d", &height, &border);
+
+	for(i = 0; i < height; i++){
+		
+		for(j = i; j < height - 1; j++) printf(" ");
+		
+		for(k = 0; k < i + 1; k++){
+			printf("*");
+
+			if(k == broder - 1 && i < height - broder)
+			{
+				if(i > broder -1) 
+				{
+					store = space;
+					while(space > 0)
+					{
+						
+						printf(" ");
+						space--; 
+					}
+					space = store + 2; 
+				}
+				
+				break; 
+			}	
+		}
+		
+		for(m = 0; m < i; m ++){
+			if(i >= 1 && i < height - broder) {
+				
+				if(m == broder) break; 
+				printf("*");
+			}
+			else printf("*");
+		}
+		printf("\n");
+	}
+}
+Dễ của m nè
 	return 0;
 }
