@@ -21,10 +21,9 @@ Ex:
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int height = 7;
-	int thickness = 2;
+	int height = atoi(argv[1]);
+	int thickness = atoi(argv[1]);
 	//Your codes here
-	
 	
 	int i, j, k, m, store;
  
