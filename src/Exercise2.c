@@ -30,11 +30,11 @@ int main(int argc, char *argv[]) {
 	int min = 999;
 
 		for (int j = 0; j < i; j++){
-			if (testcase > max){
-				max = testcase;
+			if (testcase[j] > max){
+				max = testcase[j];
 			}
-			if (testcase < min){
-				min = testcase;
+			if (testcase[j] < min){
+				min = testcase[j];
 			}
 			
 		}
