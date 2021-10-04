@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	int max = -1000;
 	int min = 1000;
 
-		for (int j = 1; j <= i -1; ++j){
+/*		for (int j = 1; j <= i -1; ++j){
 			if (testcase > max){
 				max = testcase;
 			}
@@ -38,7 +38,12 @@ int main(int argc, char *argv[]) {
 			}
 			
 		}
-
+*/
+	do {
+		if (testcase > max) max = testcase;
+		if (testcase < min && testcase != 0) min = testcase; 
+	}while (testcase != 0);
+	
 	printf("Max: %d",max);
 	printf("/nMin: %d",min);
 	
