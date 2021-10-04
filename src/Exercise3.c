@@ -12,10 +12,22 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 
+int snt(int x)
+{
+    if (x < 2)
+        return 0;
+    for (int i = 2; i <= sqrt(x); i++)
+        if (x%i == 0)
+            return 0;
+    return 1;
+}
+
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
 	//Your codes here
-	
+		for (int i = 1; i < testcase; i++)
+        if (snt(i))
+            printf("%d ",i);
 	return 0;
 }
